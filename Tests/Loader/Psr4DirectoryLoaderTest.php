@@ -106,7 +106,7 @@ class Psr4DirectoryLoaderTest extends TestCase
             new LoaderResolver([
                 new Psr4DirectoryLoader($locator),
                 new class extends AttributeClassLoader {
-                    protected function configureRoute(Route $route, \ReflectionClass $class, \ReflectionMethod $method, object $annot): void
+                    protected function configureRoute(Route $route, \ReflectionClass $class, \ReflectionMethod $method, object $attr): void
                     {
                         $route->setDefault('_controller', $class->getName().'::'.$method->getName());
                     }
