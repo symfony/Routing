@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+7.3
+---
+
+ * Allow aliases and deprecations in `#[Route]` attribute
+
 7.2
 ---
 
