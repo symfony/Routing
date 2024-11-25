@@ -498,7 +498,7 @@ class YamlFileLoaderTest extends TestCase
                     Route $route,
                     \ReflectionClass $class,
                     \ReflectionMethod $method,
-                    object $annot
+                    object $annot,
                 ): void {
                     $route->setDefault('_controller', $class->getName().'::'.$method->getName());
                 }
