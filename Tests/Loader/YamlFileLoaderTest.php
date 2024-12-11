@@ -493,7 +493,7 @@ class YamlFileLoaderTest extends TestCase
     {
         new LoaderResolver([
             $loader = new YamlFileLoader(new FileLocator(\dirname(__DIR__).'/Fixtures/locale_and_host')),
-            new class() extends AttributeClassLoader {
+            new class extends AttributeClassLoader {
                 protected function configureRoute(
                     Route $route,
                     \ReflectionClass $class,
