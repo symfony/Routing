@@ -110,11 +110,11 @@ class Psr4DirectoryLoaderTest extends TestCase
         return [
             'slash instead of back-slash' => [
                 'namespace' => 'App\Application/Controllers',
-                'exceptionMessage' => 'Namespace "App\Application/Controllers" is not a valid PSR-4 prefix.',
+                'expectedExceptionMessage' => 'Namespace "App\Application/Controllers" is not a valid PSR-4 prefix.',
             ],
             'invalid namespace' => [
                 'namespace' => 'App\Contro llers',
-                'exceptionMessage' => 'Namespace "App\Contro llers" is not a valid PSR-4 prefix.',
+                'expectedExceptionMessage' => 'Namespace "App\Contro llers" is not a valid PSR-4 prefix.',
             ],
         ];
     }
